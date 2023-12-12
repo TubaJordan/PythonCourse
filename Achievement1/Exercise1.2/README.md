@@ -164,13 +164,15 @@ recipe_4 = {
 recipe_5 = {
     "name": "chicken caesar salad",
     "cooking_time": 15,
-    "ingredients": ["romaine leetuce", "grilled chicken breast", "croutons", "parmesan cheese", "caesar dressing", "lemon juice"]
+    "ingredients": ["romaine lettuce", "grilled chicken breast", "croutons", "parmesan cheese", "caesar dressing", "lemon juice"]
 }
 ```
 
 ### Step 5: Print Ingredients
 
+```python
 print([recipe["ingredients"] for recipe in recipes])
+```
 
 ## Learning Journal
 
