@@ -91,7 +91,7 @@ file.close()
 # Output: 'Hello, Python!' is written to 'newfile.txt'.
 ```
 
-#### Using the wrtielines() Method
+#### Using the writelines() Method
 
 `writelines()` writes a list of strings to the specified file.
 
@@ -557,9 +557,12 @@ else:
 - Execute both scripts, capture their outputs.
 - Store your code, output files, and learning reflections in your GitHub repository.
 
-Image of step 1:
+Image of the Command Line Interface for `%run recipe_input.py`:
 
 ![CMD example of recipe_input.py](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.4/images/Recipe_Input.png)
+
+Image of the Command Line Interface for `%run recipe_search.py`:
+
 ![CMD example of recipe_search.py](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.4/images/Recipe_Search.png)
 
 ## Learning Journal
@@ -572,4 +575,4 @@ Image of step 1:
 
 ## Summary
 
-This exercise equips you with vital skills for file manipulation and error handling in Python, preparing you for more advanced programming challenges and real-world applications.
+This exercise equips the user with vital skills for file manipulation and error handling in Python, preparing them for more advanced programming challenges and real-world applications.
