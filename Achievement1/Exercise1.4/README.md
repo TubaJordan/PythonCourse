@@ -559,8 +559,8 @@ else:
 
 Image of step 1:
 
-![CMD example of recipe_input.py]()
-![CMD example of recipe_search.py]()
+![CMD example of recipe_input.py](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.4/images/Recipe_Input.png)
+![CMD example of recipe_search.py](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.4/images/Recipe_Search.png)
 
 ## Learning Journal
 
