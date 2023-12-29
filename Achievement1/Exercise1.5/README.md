@@ -5,16 +5,47 @@
 1. [Introduction](#introduction)
 2. [Learning Goals](#learning-goals)
 3. [Python and Object-Oriented Programming](#python-and-object-oriented-programming)
+   - [Overview of OOP in Python](#overview-of-oop-in-python)
+   - [Understanding Objects and Classes](#understanding-objects-and-classes)
+   - [Example](#example)
 4. [Building Your Own Classes](#building-your-own-classes)
+   - [Key Elements of a Class](#key-elements-of-a-class)
+   - [Example: Creating a Date Class](#example-creating-a-date-class)
 5. [Defining Data Attributes](#defining-data-attributes)
+   - [Using the `__init__()` Method](#using-the-__init__-method)
+   - [Example: Building a `Book` Class](#example-building-a-book-class)
+   - [Modifying Object Attributes](#modifiying-object-attributes)
 6. [Defining Procedural Attributes (Class Methods)](#defining-procedural-attributes-class-methods)
+   - [Getter and Setter Methods](#getter-and-setter-methods)
+   - [Example: Creating a `Vehicle` Class with Getter and Setter](#example-creating-a-vehicle-class-with-getter-and-setter)
+   - [Defining Custom Methods](#defining-custom-methods)
 7. [Polymorphism](#polymorphism)
-8. [Inheritance and Hierarchies](#inheritance-and-hierarchies)
-9. [Class Variables](#class-variables)
-10. [Task Steps](#task-steps)
-11. [Learning Journal](#learning-journal)
-12. [Screenshots](#screenshots)
-13. [Summary](#summary)
+   - [Understanding Polymorphism with Examples](#understanding-polymorphism-with-examples)
+8. [Operator Overloading in Python](#operator-overloading-in-python)
+   - [Understanding Operator Overloading with Examples](#understanding-operator-overloading-with-examples)
+9. [String Representation of an Object in Python](#string-representation-of-an-object-in-python)
+   - [Using `__str__` for Readable Output](#using-__str__-for-readable-output)
+   - [Operator Overloading for Enhanced Functionality](#operator-overloading-for-enhanced-functionality)
+10. [Inheritance and Hierarchies](#inheritance-and-hierarchies)
+    - [Basics of Inheritance](#basics-of-inheritance)
+    - [Example: Creating a Basic Inheritance Structure](#example-creating-a-basic-inheritance-structure)
+    - [Building a Hierarchy with Inheritance](#building-a-hierarchy-with-inheritance)
+    - [Example: Extending the Animal Hierarchy](#example-extending-the-animal-hierarchy)
+    - [Overriding Methods and Using `super()`](#overriding-methods-and-using-super)
+    - [Example: Human Class Inheriting from Animal](#example-human-class-inheriting-from-animal)
+11. [Class Variables](#class-variables)
+    - [Understanding Class Variables](#understanding-class-variables)
+    - [Example: Implementing Class Variables](#example-implementing-class-variables)
+    - [Modifying Class Variables](#modifying-class-variables)
+    - [Practical Application: Unique Identifiers](#practical-application-unique-identifiers)
+12. [Task Steps](#task-steps)
+    - [Building the `Recipe` Class](#building-the-recipe-class)
+    - [Implementing Recipes](#implementing-recipes)
+    - [Searching Recipes](#searching-recipes)
+    - [Final Implementation](#final-implementation)
+13. [Learning Journal](#learning-journal)
+14. [Screenshots](#screenshots)
+15. [Summary](#summary)
 
 ## Introduction
 
@@ -28,11 +59,15 @@ This exercise delves into the fundamental concepts of Object-Oriented Programmin
 
 ## Python and Object-Oriented Programming
 
-- **Overview of OOP in Python:** Object-Oriented Programming, or OOP, is a way of writing programs that are organized around "objects" rather than "actions." In Python, this means writing code that combines both data and the functions that operate on that data into one unit, called a class. A class can be thought of as a blueprint for creating objects (instances of the class). This approach differs from procedural programming, where data and functions are separate. Python's OOP approach is particularly useful for managing complex programs, as it helps keep code organized and reusable.
+### Overview of OOP in Python
 
-- **Understanding Objects and Classes:** A class in Python is like a template that defines the nature of an object. For example, consider a class `Dog`. This class might include data like `name`, `age`, and `breed`, and functions (known as methods) like `bark` or `walk`. An object is an instance of a class. If we create an object `my_dog` from the class `Dog`, `my_dog` will have its own `name`, `age`, and `breed`. We can make many objects from the same class, each with its own specific data. Using classes and objects helps in organizing code, especially in complex programs, by grouping related data and functions.
+Object-Oriented Programming, or OOP, is a way of writing programs that are organized around "objects" rather than "actions." In Python, this means writing code that combines both data and the functions that operate on that data into one unit, called a class. A class can be thought of as a blueprint for creating objects (instances of the class). This approach differs from procedural programming, where data and functions are separate. Python's OOP approach is particularly useful for managing complex programs, as it helps keep code organized and reusable.
 
-### Example
+### Understanding Objects and Classes
+
+A class in Python is like a template that defines the nature of an object. For example, consider a class `Dog`. This class might include data like `name`, `age`, and `breed`, and functions (known as methods) like `bark` or `walk`. An object is an instance of a class. If we create an object `my_dog` from the class `Dog`, `my_dog` will have its own `name`, `age`, and `breed`. We can make many objects from the same class, each with its own specific data. Using classes and objects helps in organizing code, especially in complex programs, by grouping related data and functions.
+
+#### Example
 
 ```python
 class Dog:
