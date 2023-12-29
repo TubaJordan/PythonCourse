@@ -66,7 +66,7 @@ Creating your own classes in Python is like defining a new type of object. This 
 
 3. **Attributes and Methods:** These are the data and functions that belong to your class. Attributes hold information about the object, while methods define what the object can do.
 
-### Example: Creating a Date Class
+#### Example: Creating a Date Class
 
 Let's say you want to create a class to handle dates. You'd start by defining the class and its attributes (like day, month, and year) and methods (like a method to print the date).
 
@@ -99,7 +99,7 @@ In Python, when building a class, defining data attributes is a way to specify w
 
 The `__init__()` method is special in Python. It gets called automatically when you create a new object from a class. Inside this method, you define the attributes you want your objects to have and set their initial values.
 
-### Example: Building a `Book` Class
+#### Example: Building a `Book` Class
 
 Consider a class called `Book`. Each book should have a title, an author, and a number of pages. Here's how you could define this class:
 
@@ -144,7 +144,7 @@ Getter and setter methods are common in class design. They provide a controlled 
 - **Getter Methods:** These methods allow you to retrieve or "get" the value of an object's attribute.
 - **Setter Methods:** These methods enable you to change or "set" the value of an object's attribute.
 
-### Example: Creating a `Vehicle` Class with Getter and Setter
+#### Example: Creating a `Vehicle` Class with Getter and Setter
 
 Let's define a `Vehicle` class with attributes like `make`, `model`, and `year`, along with getter and setter methods for these attributes.
 
@@ -361,7 +361,7 @@ In Python's object-oriented programming, the string representation of an object 
 
 - **Defining `__str__` Method:** This method is intended to return a string that ideally represents the object in a user-friendly format.
 
-### Example: `Height` Class with String Representation
+#### Example: `Height` Class with String Representation
 
 Consider a `Height` class that stores a person's height. By implementing `__str__`, we ensure that whenever an instance of `Height` is printed, it presents the height in a readable format.
 
@@ -414,7 +414,7 @@ Inheritance is a fundamental concept in object-oriented programming (OOP) that a
 - **Single Inheritance:** When a child class inherits from one parent class, it's known as single inheritance.
 - **Multi-level Inheritance:** When a subclass becomes a parent for another subclass, it creates multi-level inheritance.
 
-### Example: Creating a Basic Inheritance Structure
+#### Example: Creating a Basic Inheritance Structure
 
 Let's illustrate inheritance with an example. Consider a simple class `Animal` (as the parent class) and a subclass `Dog`.
 
@@ -448,7 +448,7 @@ In this example, `Dog` inherits from `Animal`. It has its own constructor (`__in
 
 Inheritance allows for the creation of a class hierarchy, where subclasses can inherit from a parent class and then become parent classes for further subclasses.
 
-### Example: Extending the Animal Hierarchy
+#### Example: Extending the Animal Hierarchy
 
 Expanding on the previous example, let's add another class `Cat` that also inherits from `Animal`.
 
@@ -472,7 +472,7 @@ Here, both `Dog` and `Cat` are subclasses of `Animal` and have unique implementa
 
 In inheritance, child classes can override methods of the parent class to provide specific behavior. They can also use `super()` to call methods from the parent class.
 
-### Example: Human Class Inheriting from Animal
+#### Example: Human Class Inheriting from Animal
 
 Let's create a `Human` class that inherits from `Animal` and introduces additional attributes and methods.
 
@@ -504,7 +504,7 @@ Class variables in Python are an essential aspect of object-oriented programming
 - **Shared Among Instances:** Class variables are shared across all instances of a class. Any change made to a class variable affects all instances of that class.
 - **Defining Class Variables:** These variables are declared within the class but outside of any methods. Unlike instance variables, they are not prefixed with `self`.
 
-### Example: Implementing Class Variables
+#### Example: Implementing Class Variables
 
 Consider a class `Car` with a class variable `total_cars` to keep track of how many `Car` objects have been created.
 
