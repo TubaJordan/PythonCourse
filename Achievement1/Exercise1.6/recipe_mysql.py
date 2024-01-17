@@ -363,4 +363,7 @@ def delete_recipe(conn, cursor):
     print("--------------------------------------------------\n")
     print("...returning to main menu\n\n")
 
+
+
+
 main_menu(conn, cursor)
