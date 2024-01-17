@@ -6,19 +6,46 @@
 2. [Learning Goals](#learning-goals)
 3. [What is an Object-Relational Mapper?](#what-is-an-object-relational-mapper)
 4. [Setting Up SQLAlchemy](#setting-up-sqlalchemy)
-5. [Creating a Table from a Mapped Class](#creating-a-table-from-a-mapped-class)
-6. [Creating a Session for Your Database](#creating-a-session-for-your-database)
-7. [Adding Entries to Your Table](#adding-entries-to-your-table)
-8. [Reading Entries from a Table](#reading-entries-from-a-table)
-9. [Updating Entries in Your Table](#updating-entries-in-your-table)
-10. [Deleting Entries from Your Table](#deleting-entries-from-your-table)
-11. [Building Your Command Line Recipe App](#building-your-command-line-recipe-app)
-12. [Task](#task)
-13. [Summary](#summary)
+   - [Installation](#installation)
+   - [Database Connector Package](#database-connector-package)
+5. [Checking MySQL Server Status and Connecting SQLAlchemy](#checking-mysql-server-status-and-connecting-sqlalchemy)
+   - [MySQL on Ubuntu](#mysql-on-ubuntu)
+   - [MySQL on macOS](#mysql-on-macos)
+   - [MySQL on Windows](#mysql-on-windows)
+6. [Connecting SQLAlchemy to Database](#connecting-sqlalchemy-to-database)
+7. [Creating a Table from a Mapped Class](#creating-a-table-from-a-mapped-class)
+   - [Introduction to Declarative Base](#introduction-to-declarative-base)
+   - [Defining the ORM Model](#defining-the-orm-model)
+   - [Representing the Model](#representing-the-model)
+   - [Creating the Table](#creating-the-table)
+   - [Verifying Table Creation](#verifying-table-creation)
+8. [Creating a Session for Your Database](#creating-a-session-for-your-database)
+   - [Overview of Session Object](#overview-of-session-object)
+   - [Importing Sessionmaker](#importing-sessionmaker)
+   - [Binding Session to Engine](#binding-session-to-engine)
+   - [Initializing Session Object](#initializing-session-object)
+   - [Usage of Session in ORM](#usage-of-session-in-orm)
+9. [Adding Entries to Your Table](#adding-entries-to-your-table)
+10. [Reading Entries from a Table](#reading-entries-from-a-table)
+11. [Updating Entries in Your Table](#updating-entries-in-your-table)
+12. [Deleting Entries from Your Table](#deleting-entries-from-your-table)
+13. [Building Your Command Line Recipe App](#building-your-command-line-recipe-app)
+    - [Overview of the App Development Process](#overview-of-the-app-development-process)
+    - [Key Guidelines for Development](#key-guidelines-for-development)
+    - [Flowchart and Application Structure](#flowchart-and-application-structure)
+14. [Task](#task)
+    - [Part 1: Set Up Your Script & SQLAlchemy](#part-1-set-up-your-script--sqlalchemy)
+    - [Part 2: Create Your Model and Table](#part-2-create-your-model-and-table)
+    - [Part 3: Define Main Operations](#part-3-define-main-operations)
+    - [Part 4: Design Your Main Menu](#part-4-design-your-main-menu)
+    - [Part 5: Final Steps](#part-5-final-steps)
+15. [Learning Journal](#learning-journal)
+16. [Screenshots](#screenshots)
+17. [Summary](#summary)
 
 ## Introduction
 
-This exercise focuses on finalizing the Recipe application using object-relational mapping (ORM) with SQLAlchemy. Object-relational mapping is a technique for converting data between incompatible systems using object-oriented programming languages. This exercise will introduce SQLAlchemy, a Python SQL toolkit and ORM, which allows for a Pythonic way of interacting with databases.
+This exercise focuses on finalizing the Recipe Application using object-relational mapping (ORM) with SQLAlchemy. Object-relational mapping is a technique for converting data between incompatible systems using object-oriented programming languages. This exercise will introduce SQLAlchemy, a Python SQL toolkit and ORM, which allows for a Pythonic way of interacting with databases.
 
 ## Learning Goals
 
@@ -29,7 +56,7 @@ This exercise focuses on finalizing the Recipe application using object-relation
 
 ## What is an Object-Relational Mapper?
 
-An object-relational mapper (ORM) is a tool that facilitates the interaction between an object-oriented programming language and a relational database. Traditional database operations often require familiarity with SQL queries, which can vary across different Database Management Systems (DBMSs). ORM simplifies this process by allowing interactions with the database using the programming language's syntax and structures.
+An object-relational mapper (ORM) is a tool that facilitates the interaction between an object-oriented programming language and a relational database. Traditional database operations often require familiarity with SQL queries, which can vary across different Database Management Systems (DBMSs). ORM simplifies this process by enabling interactions with the database using the programming language's syntax and structures.
 
 For example, in a conventional approach, inserting a record into a database might involve a SQL command like this:
 
@@ -54,11 +81,9 @@ This method not only makes code more readable but also reduces the need for dire
 
 SQLAlchemy, as an open-source Python SQL toolkit, provides extensive ORM functionalities. It's commonly used in various frameworks, including those that don't have built-in ORM support, like Flask. Embracing ORMs in development, particularly in web frameworks such as Django, simplifies database interactions, allowing developers to focus more on application logic rather than database syntax.
 
-The next section will delve into setting up SQLAlchemy for ORM integration.
-
 ## Setting Up SQLAlchemy
 
-Installation
+### Installation
 
 To install SQLAlchemy, run the following command:
 
@@ -67,7 +92,8 @@ pip install sqlalchemy
 ```
 
 This installs SQLAlchemy, enabling Python applications to communicate with databases in an object-oriented manner.
-Database Connector Package
+
+### Database Connector Package
 
 For connecting SQLAlchemy to a MySQL database, install the `mysqlclient` package:
 
@@ -143,7 +169,7 @@ The setup ensures that the MySQL server is running and SQLAlchemy is connected t
 
 ### Introduction to Declarative Base
 
-SQLAlchemy utilizes a declarative base class to define database tables. This class acts as a foundation for creating ORM models.
+SQLAlchemy utilizes a Declarative Base class to define database tables. This class acts as a foundation for creating ORM models.
 
 Import Declarative Base
 
@@ -422,7 +448,7 @@ print(f"Updated ingredients: {pasta_recipe.ingredients}")
 session.commit()
 ```
 
-This code updates the "Pasta" recipe by adding "Olive Oil" to its ingredients list.
+This code updates the 'Pasta' recipe by adding 'Olive Oil' to its ingredient list.
 
 ### Direct Database Updates
 
@@ -471,7 +497,7 @@ session.delete(sandwich_to_delete)
 session.commit()
 ```
 
-This code adds a "Sandwich" recipe to the table and subsequently deletes it.
+This code adds a 'Sandwich' recipe to the table, then subsequently deletes it.
 
 ### Verifying Deletion
 
@@ -503,7 +529,7 @@ In summary, the deletion of entries via SQLAlchemy's ORM is straightforward and 
 
 ### Overview of the App Development Process
 
-Building a command line Recipe app is an exercise in applying Python skills, particularly focusing on SQLAlchemy for database operations and handling user input.
+Building a command line Recipe App is an exercise in applying Python skills, with a particular focus on SQLAlchemy for database operations and handling user input.
 
 ### Key Guidelines for Development
 
@@ -1142,19 +1168,42 @@ def main_menu():
 
 2. Documentation and Submission:
     - Take screenshots of the app in action.
-    - (SCREENSHOTS)
-    - Upload the code and screenshots to a GitHub repository for review.
+
+Task Part 1 - Main Menu
+![Task Part 1 - Main Menu]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%201%20-%20Main%20Menu.png")
+
+Task Part 2 - Create Recipes
+![Task Part 2 - Create Recipes]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%202%20-%20Create%20Recipes.png")
+
+Task Part 3 - View All Recipes
+![Task Part 3 - View All Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%201.png")
+![Task Part 3 - View All Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%202.png")
+
+Task Part 4 - Search Recipes
+![Task Part 4 - Search Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%201.png")
+![Task Part 4 - Search Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%202.png")
+
+Task Part 5 - Update Recipes
+![Task Part 5 - Update Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%201.png")
+![Task Part 5 - Update Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%202.png")
+![Task Part 5 - Update Recipes part 3]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%203.png")
+
+Task Part 6 - Delete Recipes
+![Task Part 6 - Delete Recipes]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%206%20-%20Delete%20Recipe.png")
+
+Task Part 7 - Quit the App
+![Task Part 7 - Quit the App]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%207%20-%20Quit%20the%20App.png")
 
 This task encapsulates the application of various Python and SQLAlchemy concepts in a real-world project, showcasing the ability to create a functional and user-friendly command line application.
 
 ## Learning Journal
 
-- The learning journal included reflects on the experience and learning outcomes from this exercise.
+- The included learning journal reflects on the experiences and learning outcomes from this exercise.
 
 ## Screenshots
 
-- XXXX screenshots demonstrating the command-line interface of the task process are included in the repository.
+- Eleven screenshots demonstrating the command-line interface of the task process are included in the repository.
 
 ## Summary
 
-In this exercise, the integration of Python with a database using SQLAlchemy, an Object-Relational Mapper, is explored. The session covered the setup of SQLAlchemy, mapping of Python classes to database tables, and performing CRUD operations in a Pythonic manner. The exercise culminated in the creation of a command line Recipe application, reinforcing the concepts learned and demonstrating the practical application of ORM in software development.
+In this exercise, the integration of Python with a database using SQLAlchemy, an Object-Relational Mapper, has been explored. The session covered the setup of SQLAlchemy, mapping of Python classes to database tables, and performing CRUD operations in a Pythonic manner. The exercise culminated in the creation of a command line Recipe application, reinforcing the concepts learned and demonstrating the practical application of ORM in software development.
