@@ -1170,29 +1170,29 @@ def main_menu():
     - Take screenshots of the app in action.
 
 Task Part 1 - Main Menu
-![Task Part 1 - Main Menu]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%201%20-%20Main%20Menu.png")
+![Task Part 1 - Main Menu](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%201%20-%20Main%20Menu.png)
 
 Task Part 2 - Create Recipes
-![Task Part 2 - Create Recipes]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%202%20-%20Create%20Recipes.png")
+![Task Part 2 - Create Recipes](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%202%20-%20Create%20Recipes.png)
 
 Task Part 3 - View All Recipes
-![Task Part 3 - View All Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%201.png")
-![Task Part 3 - View All Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%202.png")
+![Task Part 3 - View All Recipes part 1](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%201.png)
+![Task Part 3 - View All Recipes part 2](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%203%20-%20View%20All%20Recipes%20part%202.png)
 
 Task Part 4 - Search Recipes
-![Task Part 4 - Search Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%201.png")
-![Task Part 4 - Search Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%202.png")
+![Task Part 4 - Search Recipes part 1](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%201.png)
+![Task Part 4 - Search Recipes part 2](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%204%20-%20Search%20Recipes%20part%202.png)
 
 Task Part 5 - Update Recipes
-![Task Part 5 - Update Recipes part 1]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%201.png")
-![Task Part 5 - Update Recipes part 2]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%202.png")
-![Task Part 5 - Update Recipes part 3]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%203.png")
+![Task Part 5 - Update Recipes part 1](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%201.png)
+![Task Part 5 - Update Recipes part 2](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%202.png)
+![Task Part 5 - Update Recipes part 3](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%205%20-%20Update%20Recipes%20part%203.png)
 
 Task Part 6 - Delete Recipes
-![Task Part 6 - Delete Recipes]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%206%20-%20Delete%20Recipe.png")
+![Task Part 6 - Delete Recipes](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%206%20-%20Delete%20Recipe.png)
 
 Task Part 7 - Quit the App
-![Task Part 7 - Quit the App]("https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%207%20-%20Quit%20the%20App.png")
+![Task Part 7 - Quit the App](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement1/Exercise1.7/images/Task%20Part%207%20-%20Quit%20the%20App.png)
 
 This task encapsulates the application of various Python and SQLAlchemy concepts in a real-world project, showcasing the ability to create a functional and user-friendly command line application.
 
