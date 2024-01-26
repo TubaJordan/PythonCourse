@@ -249,11 +249,11 @@ After completing these steps, Django should be successfully installed in the vir
     - Django is popular among web developers due to its simplicity, scalability, and robustness. It follows the "batteries-included" philosophy, offering a wide range of functionalities out-of-the-box, such as an admin panel, user authentication, and database schema migrations. Additionally, its emphasis on reusable components and a clean, pragmatic design makes it easier for developers to build and maintain high-quality web applications efficiently.
 
 3. **Companies Using Django**: Research and list five large companies that use Django, detailing their products or services and how they utilize Django.
-   - 1. *Pinterest*: An image sharing and social media service, uses Django to handle vast amounts of content and user interactions.
-   - 2. *Instagram*: A social networking service for sharing photos and videos, utilizes Django for its user-friendly interface and ability to scale efficiently.
-   - 3. *Mozilla*: Known for the Firefox browser, uses Django for its website and several internal tools.
-   - 4. *Spotify*: A music streaming service employs Django to manage complex backend operations and user data processing.
-   - 5. *YouTube*: A video sharing platform, leverages Django for certain features and server-side operations.
+   - *Pinterest*: An image sharing and social media service, uses Django to handle vast amounts of content and user interactions.
+   - *Instagram*: A social networking service for sharing photos and videos, utilizes Django for its user-friendly interface and ability to scale efficiently.
+   - *Mozilla*: Known for the Firefox browser, uses Django for its website and several internal tools.
+   - *Spotify*: A music streaming service employs Django to manage complex backend operations and user data processing.
+   - *YouTube*: A video sharing platform, leverages Django for certain features and server-side operations.
 
 4. **Scenario Analysis**: For each listed scenario, determine if Django would be an appropriate choice and explain the reasoning:
     - **Multi-user Web Application**:
@@ -271,20 +271,20 @@ After completing these steps, Django should be successfully installed in the vir
     - Download and install Python if not already done.
     - Run the command to check the Python version.
     - Include a screenshot of the terminal window showing the command and version in the document.
-    ![Python Installation]()
+    ![Python Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Install%20Django.png)
 
 6. **Setting Up a Virtual Environment**:
     - Open a new terminal window and navigate to the desired project folder.
     - Set up and create a virtual environment named `achievement2-practice`.
     - Activate the virtual environment.
     - Include a screenshot of the activated environment in the document.
-    ![Setting Up a Virtual Environment]()
+    ![Setting Up a Virtual Environment](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Create%20new%20Virtual%20Environment.png)
 
 7. **Django Installation**:
     - Install Django within the virtual environment.
     - Verify the installation by checking the Django version.
     - Include a screenshot of the terminal with the Django version in the document.
-    ![Django Installation]()
+    ![Django Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Create%20new%20Virtual%20Environment.png)
 
 8. **Document Export**:
     - Convert the document with all answers and screenshots into a PDF format.
