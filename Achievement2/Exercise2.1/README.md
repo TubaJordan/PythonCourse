@@ -271,7 +271,7 @@ After completing these steps, Django should be successfully installed in the vir
     - Download and install Python if not already done.
     - Run the command to check the Python version.
     - Include a screenshot of the terminal window showing the command and version in the document.
-    ![Python Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Install%20Django.png)
+    ![Python Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Python%20Installation.png)
 
 6. **Setting Up a Virtual Environment**:
     - Open a new terminal window and navigate to the desired project folder.
@@ -284,7 +284,7 @@ After completing these steps, Django should be successfully installed in the vir
     - Install Django within the virtual environment.
     - Verify the installation by checking the Django version.
     - Include a screenshot of the terminal with the Django version in the document.
-    ![Django Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Create%20new%20Virtual%20Environment.png)
+    ![Django Installation](https://github.com/TubaJordan/PythonCourse/blob/main/Achievement2/Exercise2.1/images/Install%20Django.png)
 
 8. **Document Export**:
     - Convert the document with all answers and screenshots into a PDF format.
