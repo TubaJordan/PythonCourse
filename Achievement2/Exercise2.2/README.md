@@ -144,7 +144,8 @@ cityguide/
 
 To avoid confusion, the outer directory 'cityguide' can be renamed to something more generic like 'src'. This is done using the command:
 
-- `$ mv cityguide src` (modify for the appropriate OS)
+- **Linux/macOS**: `$ mv cityguide src`
+- **Windows**: `rename cityguide src`
 
 ### Running Basic Commands
 
