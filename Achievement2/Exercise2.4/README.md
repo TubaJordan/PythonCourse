@@ -4,16 +4,16 @@
 
 1. [Introduction](#introduction)
 2. [Learning Goals](#learning-goals)
-3. [Views and Templates Overview](#views-and-templates-overview)
-   - [Defining Views](#defining-views)
-   - [Creating Templates](#creating-templates)
-   - [Mapping URLs to Views](#mapping-urls-to-views)
+3. [Views and Templates](#views-and-templates)
 4. [Creating a Custom Welcome Page](#creating-a-custom-welcome-page)
-   - [Files and Folders, the Django Way](#files-and-folders-the-django-way)
-   - [Step-by-Step Implementation](#step-by-step-implementation)
-5. [Django Views: FBV vs. CBV](#django-views-fbv-vs-cbv)
-6. [Task](#task)
-7. [Summary](#summary)
+    - [Understanding the Files and Folder Structure](#understanding-the-files-and-folder-structure)
+5. [Files and Folders, the Django Way](#files-and-folders-the-django-way)
+    - [Directory and File Setup for the Blog App](#directory-and-file-setup-for-the-blog-app)
+6. [Django Views and Templates](#django-views-and-templates)
+    - [Function-Based Views (FBV) vs. Class-Based Views (CBV)](#function-based-views-fbv-vs-class-based-views-cbv)
+    - [Implementing Views and Templates in the Blog App](#implementing-views-and-templates-in-the-blog-app)
+7. [Task](#task)
+8. [Summary](#summary)
 
 ## Introduction
 
